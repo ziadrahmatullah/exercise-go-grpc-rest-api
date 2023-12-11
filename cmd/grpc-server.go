@@ -1,0 +1,8 @@
+package cmd
+
+import "git.garena.com/sea-labs-id/bootcamp/batch-02/ziad-rahmatullah/exercise-go-grpc-rest-api/usecase"
+
+func StartGRPCServer() {
+	cu := usecase.NewCaculatorUsecase()
+
+}
