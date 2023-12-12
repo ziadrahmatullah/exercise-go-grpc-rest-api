@@ -31,7 +31,7 @@ func (h *CalculatorGrpcHandler) Add(ctx context.Context, req *pb.Numbers) (*pb.R
 }
 
 func (h *CalculatorGrpcHandler) Multiply(ctx context.Context, req *pb.Numbers) (*pb.Result, error) {
-	res, err := h.usecase.Add(ctx, dto.Numbers{
+	res, err := h.usecase.Multiply(ctx, dto.Numbers{
 		Num1: int(req.Num1),
 		Num2: int(req.Num2),
 	})

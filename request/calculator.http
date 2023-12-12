@@ -1,0 +1,16 @@
+proto < ../proto/calculator.proto
+@host=localhost:50051
+
+### Success
+GRPC /Arithmetic/Add
+{
+    "num1":5,
+    "num2":5
+}
+
+### Success
+GRPC /Arithmetic/Multiply
+{
+    "num1":5,
+    "num2":5
+}
